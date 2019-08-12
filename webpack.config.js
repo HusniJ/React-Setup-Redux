@@ -24,8 +24,4 @@ module.exports = {
             to:'images'
         }]), 
     ]
-    //,
-    //devServer: {
-    //    port: 3000
-    //}
 }

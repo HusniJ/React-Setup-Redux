@@ -1,6 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+const PORT = process.env.PORT || 3000;
 
 module.exports = {
     entry: './src/index.js',
@@ -23,5 +24,8 @@ module.exports = {
             from:'src/images',
             to:'images'
         }]), 
-    ]
+    ],
+    devServer: {
+        port: PORT,
+      }
 }
